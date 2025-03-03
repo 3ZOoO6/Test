@@ -1,12 +1,70 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ar" dir="rtl">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>React App</title>
+    <meta charset="UTF-8">
+    <title>دليل تثبيت Kali NetHunter بدون روت</title>
+    <style>
+        body { font-family: Arial, sans-serif; line-height: 1.6; margin: 20px; }
+        h1, h2, h3 { color: #2c3e50; }
+        code { background: #f4f4f4; padding: 2px 5px; border-radius: 3px; }
+        table { border-collapse: collapse; width: 100%; margin: 20px 0; }
+        th, td { border: 1px solid #ddd; padding: 12px; text-align: right; }
+        img { max-width: 100%; height: auto; }
+        .warning { background: #fff3cd; padding: 15px; border-radius: 5px; margin: 20px 0; }
+    </style>
 </head>
 <body>
-  <div id="root"></div>
-  <script src="bundle.js"></script>
+    <h1>دليل شامل لتثبيت Kali NetHunter على أندرويد بدون روت</h1>
+
+    <h2>المتطلبات الأساسية</h2>
+    <ul>
+        <li>هاتف أندرويد بإصدار 8.0 أو أعلى.</li>
+        <li>مساحة تخزين 5GB فما فوق.</li>
+        <li>اتصال إنترنت مستقر.</li>
+    </ul>
+
+    <h2>خطوات التثبيت عبر Termux</h2>
+    <ol>
+        <li>تثبيت تطبيق <strong>Termux</strong> من متجر Play.</li>
+        <li>فتح Termux وتنفيذ الأوامر التالية بالترتيب:</li>
+    </ol>
+
+    <table>
+        <tr><th>الرقم</th><th>الأمر</th></tr>
+        <tr><td>1</td><td><code>termux-setup-storage</code></td></tr>
+        <tr><td>2</td><td><code>pkg install wget</code></td></tr>
+        <tr><td>3</td><td><code>wget -O install-nethunter-termux https://offs.ec/2MceZWr</code></td></tr>
+        <tr><td>4</td><td><code>chmod +x install-nethunter-termux</code></td></tr>
+        <tr><td>5</td><td><code>./install-nethunter-termux</code></td></tr>
+    </table>
+
+    <div class="warning">
+        <h3>ملاحظات هامة!</h3>
+        <ul>
+            <li>قد تستغرق العملية أكثر من 30 دقيقة حسب سرعة الإنترنت.</li>
+            <li>أثناء التثبيت، قد يُطلب إدخال كلمة مرور افتراضية: <code>nethunter</code>.</li>
+            <li>تجنب إغلاق التطبيق أثناء التنفيذ!</li>
+        </ul>
+    </div>
+
+    <h2>ربط NetHunter مع تطبيق Kex</h2>
+    <p>بعد التثبيت:</p>
+    <ol>
+        <li>نزِّل تطبيق <strong>NetHunter Kex</strong> من المتجر الرسمي.</li>
+        <li>افتح التطبيق واتبع الإرشادات لربط الواجهة الرسومية.</li>
+    </ol>
+
+    <h2>استكشاف الأخطاء الشائعة</h2>
+    <ul>
+        <li><strong>مشكلة التحديثات:</strong> تأكد من استخدام <code>apt update && apt upgrade -y</code> أولًا.</li>
+        <li><strong>أخطاء التخزين:</strong> تفعيل صلاحيات التخزين عبر <code>termux-setup-storage</code>.</li>
+    </ul>
+
+    <h3>الدعم الفني</h3>
+    <p>للأسئلة أو المشكلات، راسلنا عبر <a href="mailto:support@kali-tools.com">البريد الإلكتروني</a>.</p>
+
+    <footer style="margin-top: 50px; text-align: center; color: #7f8c8d;">
+        <p>© 2023 Kali Tools. جميع الحقوق محفوظة.</p>
+    </footer>
 </body>
 </html>
